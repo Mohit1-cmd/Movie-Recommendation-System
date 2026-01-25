@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+#recommended
 def recommend(movie):
     movie_index = movies[movies['title']==movie].index[0]
     distances = similarity[movie_index]
